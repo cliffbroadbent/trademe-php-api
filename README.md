@@ -1,3 +1,5 @@
+# [Original repo](https://github.com/jpcaparas/trademe-php-api)
+
 # Trade Me PHP API
 
 [![Build Status](https://travis-ci.org/jpcaparas/trademe-php-api.svg?branch=master)](https://travis-ci.org/jpcaparas/trademe-php-api) [![Coverage Status](https://coveralls.io/repos/github/jpcaparas/trademe-php-api/badge.svg?branch=master)](https://coveralls.io/github/jpcaparas/trademe-php-api?branch=master)
