@@ -1,4 +1,4 @@
-# [Original repo](https://github.com/jpcaparas/trademe-php-api)
+## [Original repo](https://github.com/jpcaparas/trademe-php-api)
 
 # Trade Me PHP API
 
@@ -8,7 +8,7 @@ An unofficial PHP client to make it easy to interface with Trade Me's [API platf
 
 ## Installation
 
-    composer require jpcaparas/trademe-php-api
+    composer require goldfinch/trademe-php-api
 
 ## Authorizing
 
