@@ -2,9 +2,7 @@
 
 namespace JPCaparas\TradeMeAPI;
 
-
 use GuzzleHttp\Subscriber\Oauth\Oauth1 as Oauth1Base;
-use JPCaparas\TradeMeAPI\Exceptions\OAuthException;
 use Psr\Http\Message\RequestInterface;
 
 /**
@@ -45,7 +43,7 @@ class OAuth1 extends Oauth1Base
      *
      * @return string
      */
-    public function getSignature(RequestInterface $request, array $params)
+    public function getSignature(RequestInterface $request, array $params): string
     {
         return $this->consumerSecret . '&' . $this->tokenSecret;
     }

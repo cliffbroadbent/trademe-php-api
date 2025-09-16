@@ -7,7 +7,9 @@ Forked as it appears people work with Trademe once and have no need to keep the 
 # Changelog
 
 - 2025-09-16:
-  - Update `guzzle/oauth-subscriber` dependency due to [security issue](https://github.com/advisories/GHSA-237r-r8m4-4q88).
+  - Update `guzzle/oauth-subscriber` dependency due to [security issue](https://github.com/advisories/GHSA-237r-r8m4-4q88);
+  - Fix prophecy deprecation;
+  - Update `OAuth1::getSignature(RequestInterface, array): string` signature.
 
 # Trade Me PHP API
 
