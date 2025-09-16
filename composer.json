@@ -1,5 +1,5 @@
 {
-    "name": "cliffbroadbent/trademe-php-api",
+    "name": "goldfinch/trademe-php-api",
     "description": "A PHP client for the Trade Me API",
     "type": "library",
     "license": "MIT",
@@ -31,6 +31,7 @@
         "phpunit/phpunit": "^9.6",
         "phpspec/prophecy": "^1.18",
         "symfony/var-dumper": "^6.3",
-        "php-coveralls/php-coveralls": "^2.7"
+        "php-coveralls/php-coveralls": "^2.7",
+        "phpspec/prophecy-phpunit": "^2.4"
     }
 }

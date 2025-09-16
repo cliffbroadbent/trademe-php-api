@@ -12,7 +12,7 @@ use Tests\TestCase;
  * @coversDefaultClass \JPCaparas\TradeMeAPI\Client
  */
 class ClientTest extends TestCase
-{
+{    
     /**
      * @covers ::sellItem
      */
