@@ -1,5 +1,14 @@
 ## [Original repo](https://github.com/jpcaparas/trademe-php-api)
 
+# Forked
+
+Forked as it appears people work with Trademe once and have no need to keep the library updated.
+
+# Changelog
+
+- 2025-09-16:
+  - Update `guzzle/oauth-subscriber` dependency due to [security issue](https://github.com/advisories/GHSA-237r-r8m4-4q88).
+
 # Trade Me PHP API
 
 [![Build Status](https://travis-ci.org/jpcaparas/trademe-php-api.svg?branch=master)](https://travis-ci.org/jpcaparas/trademe-php-api) [![Coverage Status](https://coveralls.io/repos/github/jpcaparas/trademe-php-api/badge.svg?branch=master)](https://coveralls.io/github/jpcaparas/trademe-php-api?branch=master)
