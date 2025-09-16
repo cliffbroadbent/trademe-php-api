@@ -1,5 +1,5 @@
 {
-    "name": "goldfinch/trademe-php-api",
+    "name": "cliff-broadbent/trademe-php-api",
     "description": "A PHP client for the Trade Me API",
     "type": "library",
     "license": "MIT",
