@@ -8,6 +8,7 @@ use GuzzleHttp\Psr7\Response;
 use GuzzleHttp\RequestOptions;
 use JPCaparas\TradeMeAPI\Concerns\ValidatesRequired;
 use JPCaparas\TradeMeAPI\Exceptions\RequestException;
+use Throwable;
 
 class Request
 {
@@ -201,13 +202,19 @@ class Request
             } else {
                 throw new RequestException($e->getMessage());
             }
+        } catch (Throwable $t) {
+            throw new RequestException('An unexpected error occurred: '.$t->getMessage());
         }
 
-        $body = $response->getBody();
+        $bodyString = (string) $response->getBody();
+        $this->lastResponse = $bodyString;
 
-        $this->lastResponse = $body->getContents();
+        // $body = $response->getBody();
 
-        return $this->lastResponse;
+        // $this->lastResponse = $body->getContents();
+
+        return $bodyString;
+        // return $this->lastResponse;
     }
 
     /**
