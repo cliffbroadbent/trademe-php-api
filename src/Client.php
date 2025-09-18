@@ -157,7 +157,7 @@ class Client
     {
         return sprintf(
             '%s/Oauth/Authorize?oauth_token=%s',
-            'https://secure.' . $this->request->getBaseDomain(),
+            'https://www.' . $this->request->getBaseDomain(),
             urlencode($tempAccessToken)
         );
     }

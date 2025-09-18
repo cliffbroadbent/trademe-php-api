@@ -4,7 +4,6 @@ namespace JPCaparas\TradeMeAPI;
 
 use GuzzleHttp\Client as HttpClient;
 use GuzzleHttp\HandlerStack;
-use GuzzleHttp\Psr7\Response;
 use GuzzleHttp\RequestOptions;
 use JPCaparas\TradeMeAPI\Concerns\ValidatesRequired;
 use JPCaparas\TradeMeAPI\Exceptions\RequestException;
@@ -14,7 +13,7 @@ class Request
 {
     use ValidatesRequired;
 
-    private const BASE_DOMAIN_PRODUCTION = 'trademe.co.nz';
+    private const BASE_DOMAIN_PRODUCTION = 'secure.trademe.co.nz';
     private const BASE_DOMAIN_SANDBOX = 'tmsandbox.co.nz';
 
     private const API_VERSION = 'v1';
@@ -175,7 +174,7 @@ class Request
      * @param array $headers
      * @param array $options
      *
-     * @return Response
+     * @return string
      *
      * @throws RequestException
      */
@@ -232,7 +231,7 @@ class Request
     public function oauth(string $method, string $uri, array $parameters = [], array $headers = []): string
     {
         $OAuthUrl = sprintf(
-            'https://secure.%s/%s',
+            'https://api.%s/%s',
             $this->getBaseDomain() . '/Oauth',
             ltrim($uri, '/'));
 
