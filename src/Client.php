@@ -66,15 +66,15 @@ class Client
     /**
      * General purpose method for sending API requests.
      *
-     * @param $method
-     * @param $uri
-     * @param $params
+     * @param string $method
+     * @param string $uri
+     * @param array $params
      *
      * @return string
      *
      * @throws RequestException
      */
-    public function api($method, $uri, $params): string
+    public function api(string $method, string $uri, array $params): string
     {
         return $this->request->api($method, $uri, $params);
     }

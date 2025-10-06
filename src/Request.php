@@ -197,7 +197,7 @@ class Request
             $response = $this->httpClient->request($method, $url, $options);
         } catch (\Exception $e) {
             if ($e instanceof \GuzzleHttp\Exception\RequestException) {
-                throw new RequestException($e->getResponse()->getBody(true));
+                throw new RequestException($e->getResponse()->getBody(true), $e->getCode(), $e);
             } else {
                 throw new RequestException($e->getMessage());
             }
