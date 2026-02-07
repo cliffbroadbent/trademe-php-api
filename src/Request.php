@@ -13,7 +13,7 @@ class Request
 {
     use ValidatesRequired;
 
-    private const BASE_DOMAIN_PRODUCTION = 'secure.trademe.co.nz';
+    private const BASE_DOMAIN_PRODUCTION = 'trademe.co.nz';
     private const BASE_DOMAIN_SANDBOX = 'tmsandbox.co.nz';
 
     private const API_VERSION = 'v1';
